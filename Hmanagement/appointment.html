@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> MY Hospital </title>
+	<link rel = "icon" href = "img/Logo.PNG" type = "image/x-icon">
+	<link href="css/style.css" type="text/css" rel="stylesheet">
+	
+	<script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	
+	
+	<div class="logo">
+		<div>
+			<table>
+				<tr>
+					<td width="600px" style="font-size:50px;"> <font color="#000"><a href="home.html"> MY Hospital </a></font> </td>
+					<td> <br> <br>
+						<font size="4px"> 
+							<a href="home.html">HOME</a> 
+							<a href="about.html">ABOUT US</a>  
+							<a href="service.html">SPECIALITIES</a>
+							<a href="appointment.html">APPOINTMENT</a>
+							<a href="login.html">LOGIN</a>
+						</font>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+
+
+	<div class="container">
+		<form>
+		  <i class="fas fa-paper-plane"></i>
+		  <div class="input-group">
+			<label>Full Name</label>
+			<input type="text" placeholder="Enter your name" id="name" onkeyup="validatename()">
+			<span id="namerror"></span>
+		  </div>
+	
+		  <div class="input-group">
+			<label>Phone No</label>
+			<input type="tel" placeholder="123 456 7890" id="phon" maxlength="10" onkeyup="validatephone()">
+			<span id="phonerror"></span>
+		  </div>
+	
+		  <div class="input-group">
+			<label>Email Id</label>
+			<input type="email" placeholder="Enter Email" id="email" onkeyup="validatemail()">
+			<span id="emailerror"></span>
+		  </div>   
+
+		  <div class="input-group">
+			<label >Fixture date </label>
+			<input type="date" id="appointment" name="appointment" onchange="isFutureDate()">
+			<span id="apperror"></span>
+		  </div>
+	
+		  <div class="input-group">
+			<label>Your Message</label>
+			<textarea rows="5" placeholder="Enter your message (Optional)"></textarea>
+		  </div>
+	
+		<button>Submit</button>
+	   
+	  </form>
+	  <td style="padding-left:20px;"> <img src="img/appointmentsmartphone.gif" width="400px" height="500"></td><br><br>
+	  	
+	</div>
+	
+	
+	<script src="script.js"></script>
+</body>
+</html>
